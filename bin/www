@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('soynet-mern-backend:server');
+var debug = require('debug')('cicd-demo-backend:server');
 var http = require('http');
 const apiPort = 8080
 

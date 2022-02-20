@@ -1,6 +1,9 @@
 # CICD Demo for k8s deployment
+## CICD Architecture
+![Alt text](./images/cicd-fullflow.jpg?raw=true "Title")
 
-This is for Backend API part exposing the following APIs without Security enforcement:
+## 1. Continuous Integration (CI) for Backend APIs
+[APIs without Security enforcement]
 ```sh
 - POST '/api/cicd/user' to createUser
 - PUT '/api/cicd/user/:id' to updateUser
@@ -8,8 +11,11 @@ This is for Backend API part exposing the following APIs without Security enforc
 - GET '/api/cicd/user/:id' to getUserById
 - GET '/api/cicd/users' to get all Users
 ```
+Example: http://[server]:[port]/api/cicd/apikey/users
+![NoSec](./images/postman-nosecurity.jpg)
+<img alt="NoSec" height="35" src="./images/postman-nosecurity.jpg" width="70"/>
 
-APIs with Security enforcement (using APIkey in Http Header):
+[APIs with Security enforcement - using APIkey in Http Header]
 ```sh
 - POST '/api/cicd/apikey/user' to createUser
 - PUT '/api/cicd/apikey/user/:id' to updateUser
@@ -17,10 +23,12 @@ APIs with Security enforcement (using APIkey in Http Header):
 - GET '/api/cicd/apikey/user/:id' to getUserById
 - GET '/api/cicd/apikey/users' to get all Users
 ```
+Example: http://[server]:[port]/api/cicd/apikey/users
+![Alt text](./images/postman-apikey.jpg?raw=true "Title")
 
 The backend database is MongoDB Atlas.
 
-### Microservices Design pattern - Aggregator Pattern
+### 2. Microservices Design pattern - Aggregator Pattern
 Aggregator is a basic web page (in this case frontend web page) which invokes various services to achieve the required functionality.
 The above backend API services are the REST endpoint used by the frontend web page(s).
 
