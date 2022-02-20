@@ -58,7 +58,7 @@ ArgoCD is a declarative, GitOps continuous delivery tool for Kubernetes.
 
 For this demo, one ArgoCD app has been registered to meet CD requirement:
 
-<img alt="ArgoCD1" height="300" src="./images/gitops-argocd-details.jpg" width="400"/>
+<img alt="ArgoCD1" height="450" src="./images/gitops-argocd-details.jpg" width="700"/>
 
 <img alt="ArgoCD2" height="300" src="./images/gitops-argocd.jpg" width="400"/>
 
