@@ -6,7 +6,6 @@ var db = require('./db')
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var streamdataio = require('./streamdataio')
 var indexRouter = require('./routes/index');
 
 var app = express();
@@ -86,7 +85,5 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-//console.log('starting');
-//streamdataio.server();
 module.exports = app;
 
