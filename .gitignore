@@ -8,7 +8,7 @@ npm-debug.log
 *.zip
 
 node_modules/
-package-lock.json
+package-lock.json.bak
 
 *.class
 

@@ -18,7 +18,7 @@ RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
 # If a WORKDIR isn’t set, Docker will create one by default, so it’s a good idea to set it explicitly.
 WORKDIR /home/node/app
 
-# Next, copy the package.json and package-lock.json (for npm 5+) files:
+# Next, copy the package.json and package-lock.json.bak (for npm 5+) files:
 COPY package*.json ./
 
 # To ensure that all of the application files are owned by the non-root node user, including the
