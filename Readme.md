@@ -67,6 +67,10 @@ For this demo, Istio has been used to support the distributed microservices arch
 
 <img alt="istio" height="300" src="./images/istio.jpg" width="450"/>
 
+By adding a proxy "sidecar" (a.k.a. Envoy proxy) with every application deployed, 
+Istio lets developers to program application-aware traffic management, observability, and 
+robust security capabilities into the network.
+
 ## 4. Observability - Grafana and Kiali
 Istio integrates with Kiali telemetry applicaiton. 
 The Kiali dashboard provides service mesh deployment information, such as:
@@ -81,6 +85,9 @@ The Kiali dashboard provides service mesh deployment information, such as:
 The Grafana dashboard also implemented to monitor the health of Istio and of applications within the service mesh.
 
 ## 5. API Streaming - StreamData.io
+This is Server-Side-Event API (a.k.a event-driven API).
 
+NOTE: A quick demo done at frontend github repository 
+(https://github.com/simhead/cicd-demo-frontend.git)
 
 
