@@ -3,6 +3,17 @@
 
 <img alt="Alt text" height="450" src="./images/cicd-fullflow.jpg?raw=true" title="Title" width="700"/>
 
+```sh
+1. Develop an API with Github repository integration
+2. Test and validate locally
+3. Jenkins Job:
+   1. build docker image
+   2. push image to Dockerhub
+   3. initiate CD flow.
+4. Operator (once notified), updates the build number then pushes to Helm repository.
+5. ArgoCD listens to the change and if there is a change event then intiates the new k8s deployment.
+```
+
 ## 1. Continuous Integration (CI) for Backend APIs
 [APIs without Security enforcement]
 ```sh
@@ -28,7 +39,11 @@ Example: http://[server]:[port]/api/cicd/apikey/users
 
 <img alt="Alt text" height="300" src="./images/postman-apikey.jpg" title="Title" width="400"/>
 
-The Application is based on `MERN` stack
+### 2. Microservices Design pattern - Aggregator Pattern
+Aggregator is a basic web page (in this case frontend web page) which invokes various services to achieve the required functionality.
+The above backend API services are the REST endpoint used by the frontend web page(s).
+
+For this demo, application is developed using the `MERN` stack
 
 <img alt="NoSec" height="300" src="./images/mernstack.jpg" width="400"/>
 
@@ -38,17 +53,13 @@ The Application is based on `MERN` stack
 - React(.js) - a client-side JavaScript framework
 - Node(.js) - the premier JavaScript web server
 ```
-### 2. Microservices Design pattern - Aggregator Pattern
-Aggregator is a basic web page (in this case frontend web page) which invokes various services to achieve the required functionality.
-The above backend API services are the REST endpoint used by the frontend web page(s).
+## 2. GitOps - ArgoCD
+ArgoCD is a declarative, GitOps continuous delivery tool for Kubernetes.
 
-This project also supports `CICD` process. Particularily this project is to focus on CI part as follows:
-```sh
-1. Develop code by integrating with Github @ https://github.com/simhead/soynet-mern-backend
-2. Test and validate locally
-3. Push to Jenkins:
-   1. build docker image
-   2. push image to Dockerhub
-   3. initiate CD flow.
-```
-Jenkins is to trigger CD flow by notifying the change in Github source @ https://github.com/simhead/cicd-demo-gitops-argocd
+For this demo, one ArgoCD app has been registered to meet CD requirement:
+
+<img alt="ArgoCD1" height="300" src="./images/gitops-argocd-details.jpg" width="400"/>
+
+<img alt="ArgoCD2" height="300" src="./images/gitops-argocd.jpg" width="400"/>
+
+
