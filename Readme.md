@@ -65,7 +65,7 @@ For this demo, one ArgoCD app has been registered to meet CD requirement:
 ## 3. Service Mesh - Istio
 For this demo, Istio has been used to support the distributed microservices architecture.
 
-<img alt="istio" height="400" src="./images/istio.jpg" width="300"/>
+<img alt="istio" height="300" src="./images/istio.jpg" width="450"/>
 
 ## 4. Observability - Grafana and Kiali
 Istio integrates with Kiali telemetry applicaiton. 
