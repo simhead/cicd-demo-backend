@@ -28,8 +28,14 @@ Example: http://[server]:[port]/api/cicd/apikey/users
 
 <img alt="Alt text" height="300" src="./images/postman-apikey.jpg" title="Title" width="400"/>
 
-The backend database is MongoDB Atlas.
-
+The Application is based on `MERN` stack
+<img alt="NoSec" height="300" src="./images/mernstack.jpg" width="400"/>
+```sh
+- MongoDB - document database
+- Express(.js) - Node.js web framework
+- React(.js) - a client-side JavaScript framework
+- Node(.js) - the premier JavaScript web server
+```
 ### 2. Microservices Design pattern - Aggregator Pattern
 Aggregator is a basic web page (in this case frontend web page) which invokes various services to achieve the required functionality.
 The above backend API services are the REST endpoint used by the frontend web page(s).
