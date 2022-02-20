@@ -1,5 +1,5 @@
 {
-  "name": "movies-server",
+  "name": "cicd-demo-backend",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -11,12 +11,16 @@
     "cors": "^2.8.5",
     "debug": "~2.6.9",
     "express": "~4.16.1",
+    "fast-json-patch": "^3.1.0",
     "http-errors": "~1.6.3",
     "mongoose": "^5.10.9",
     "mongoose-double": "0.0.1",
     "morgan": "~1.9.1",
+    "node-print": "0.0.4",
     "nodemon": "^2.0.5",
     "pug": "2.0.0-beta11",
+    "streamdataio-js-sdk": "^2.0.2",
+    "streamdataio-js-sdk-auth": "^2.0.0",
     "swagger-ui-express": "^4.3.0"
   }
 }
