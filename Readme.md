@@ -29,7 +29,9 @@ Example: http://[server]:[port]/api/cicd/apikey/users
 <img alt="Alt text" height="300" src="./images/postman-apikey.jpg" title="Title" width="400"/>
 
 The Application is based on `MERN` stack
+
 <img alt="NoSec" height="300" src="./images/mernstack.jpg" width="400"/>
+
 ```sh
 - MongoDB - document database
 - Express(.js) - Node.js web framework
