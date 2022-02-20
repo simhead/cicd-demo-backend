@@ -15,7 +15,7 @@
 ```
 
 ## 1. Continuous Integration (CI) for Backend APIs
-[APIs without Security enforcement]
+&nbsp;&nbsp;&nbsp;&nbsp;### 1a. APIs without Security enforcement
 ```sh
 - POST '/api/cicd/user' to createUser
 - PUT '/api/cicd/user/:id' to updateUser
@@ -23,11 +23,11 @@
 - GET '/api/cicd/user/:id' to getUserById
 - GET '/api/cicd/users' to get all Users
 ```
-Example: http://[server]:[port]/api/cicd/apikey/users
+&nbsp;&nbsp;&nbsp;&nbsp;Example: http://[server]:[port]/api/cicd/apikey/users
 
 <img alt="NoSec" height="300" src="./images/postman-nosecurity.jpg" width="400"/>
 
-[APIs with Security enforcement - using APIkey in Http Header]
+&nbsp;&nbsp;&nbsp;&nbsp;### 1b. API Security enforcement - using APIkey in HTTP Header
 ```sh
 - POST '/api/cicd/apikey/user' to createUser
 - PUT '/api/cicd/apikey/user/:id' to updateUser
@@ -61,6 +61,26 @@ For this demo, one ArgoCD app has been registered to meet CD requirement:
 <img alt="ArgoCD2" height="300" src="./images/gitops-argocd.jpg" width="400"/>
 
 ![ArgoCD1](./images/gitops-argocd-details.jpg)
+
+## 3. Service Mesh - Istio
+For this demo, Istio has been used to support the distributed microservices architecture.
+
+<img alt="istio" height="400" src="./images/istio.jpg" width="300"/>
+
+## 4. Observability - Grafana and Kiali
+Istio integrates with Kiali telemetry applicaiton. 
+The Kiali dashboard provides service mesh deployment information, such as:
+
+- display the topology of the mesh,
+- analyze the health of the mesh.
+
+![kiali](./images/dashboard-istio-kiali.jpg)
+
+![kiali2](./images/dashboard-istio-kiali2.jpg)
+
+The Grafana dashboard also implemented to monitor the health of Istio and of applications within the service mesh.
+
+## 5. API Streaming - StreamData.io
 
 
 
