@@ -1,6 +1,7 @@
 # CICD Demo for k8s deployment
 ## CICD Architecture
-![Alt text](./images/cicd-fullflow.jpg?raw=true "Title")
+
+<img alt="Alt text" height="100" src="./images/cicd-fullflow.jpg?raw=true" title="Title" width="200"/>
 
 ## 1. Continuous Integration (CI) for Backend APIs
 [APIs without Security enforcement]
@@ -12,8 +13,8 @@
 - GET '/api/cicd/users' to get all Users
 ```
 Example: http://[server]:[port]/api/cicd/apikey/users
-![NoSec](./images/postman-nosecurity.jpg)
-<img alt="NoSec" height="35" src="./images/postman-nosecurity.jpg" width="70"/>
+
+<img alt="NoSec" height="100" src="./images/postman-nosecurity.jpg" width="200"/>
 
 [APIs with Security enforcement - using APIkey in Http Header]
 ```sh
@@ -24,7 +25,7 @@ Example: http://[server]:[port]/api/cicd/apikey/users
 - GET '/api/cicd/apikey/users' to get all Users
 ```
 Example: http://[server]:[port]/api/cicd/apikey/users
-![Alt text](./images/postman-apikey.jpg?raw=true "Title")
+<img alt="Alt text" height="100" src="./images/postman-apikey.jpg?raw=true" title="Title" width="200"/>
 
 The backend database is MongoDB Atlas.
 
