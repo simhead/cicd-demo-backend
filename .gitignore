@@ -7,6 +7,9 @@ npm-debug.log
 *.pem
 *.zip
 
+node_modules/
+package-lock.json
+
 *.class
 
 # Mobile Tools for Java (J2ME)
