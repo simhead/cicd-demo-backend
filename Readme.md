@@ -1,7 +1,7 @@
 # CICD Demo for k8s deployment
 ## CICD Architecture
 
-<img alt="Alt text" height="450" src="./images/cicd-fullflow.jpg?raw=true" title="Title" width="700"/>
+![CICDfull](./images/cicd-fullflow.jpg?raw=true "Title")
 
 ```sh
 1. Develop an API with Github repository integration
@@ -85,9 +85,18 @@ The Kiali dashboard provides service mesh deployment information, such as:
 The Grafana dashboard also implemented to monitor the health of Istio and of applications within the service mesh.
 
 ## 5. API Streaming - StreamData.io
-This is Server-Side-Event API (a.k.a event-driven API).
+This is Server-Side-Event API (a.k.a event-driven API) - 
+using the sample API provided by Streamdata.io provider. 
 
-NOTE: A quick demo done at frontend github repository 
-(https://github.com/simhead/cicd-demo-frontend.git)
+![apistream](./images/streamdataio.jpg)
+
+An SSE event stream is delivered as a streaming HTTP response.
+i.e. the client initiates a regular HTTP request,
+the server responds with a custom `text/event-stream` content-type,
+and then streams the UTF-8 encoded event data.
+
+NOTE: A quick demo done at frontend github repository (https://github.com/simhead/cicd-demo-frontend.git) 
+using the sample API provided from http://stockmarket.streamdata.io/v2/prices
+
 
 
