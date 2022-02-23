@@ -25,7 +25,7 @@
 ```
 &nbsp;&nbsp;&nbsp;&nbsp;Example: http://[server]:[port]/api/cicd/apikey/users
 
-<img alt="NoSec" height="300" src="./images/postman-nosecurity.jpg" width="400"/>
+<img alt="NoSec" height="350" src="./images/postman-nosecurity.jpg" width="450"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;### 1b. API Security enforcement - using APIkey in HTTP Header
 ```sh
@@ -37,7 +37,7 @@
 ```
 Example: http://[server]:[port]/api/cicd/apikey/users
 
-<img alt="Alt text" height="300" src="./images/postman-apikey.jpg" title="Title" width="400"/>
+<img alt="Alt text" height="350" src="./images/postman-apikey.jpg" title="Title" width="450"/>
 
 ### 2. Microservices Design pattern - Aggregator Pattern
 Aggregator is a basic web page (in this case frontend web page) which invokes various services to achieve the required functionality.
