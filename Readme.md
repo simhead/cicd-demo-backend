@@ -53,7 +53,7 @@ For this demo, application is developed using the `MERN` stack
 - React(.js) - a client-side JavaScript framework
 - Node(.js) - the premier JavaScript web server
 ```
-## 2. GitOps - ArgoCD
+## 3. GitOps - ArgoCD
 ArgoCD is a declarative, GitOps continuous delivery tool for Kubernetes.
 
 For this demo, one ArgoCD app has been registered to meet CD requirement:
@@ -65,7 +65,7 @@ For this demo, one ArgoCD app has been registered to meet CD requirement:
 Github source for this demo is at 
 https://github.com/simhead/cicd-demo-gitops-argocd
 
-## 3. Service Mesh - Istio
+## 4. Service Mesh - Istio
 For this demo, Istio has been used to support the distributed microservices architecture.
 
 <img alt="istio" height="300" src="./images/istio.jpg" width="450"/>
@@ -74,7 +74,7 @@ By adding a proxy "sidecar" (a.k.a. Envoy proxy) with every application deployed
 Istio lets developers to program application-aware traffic management, observability, and 
 robust security capabilities into the network.
 
-## 4. Observability - Grafana and Kiali
+## 5. Observability - Grafana and Kiali
 Istio integrates with Kiali telemetry applicaiton. 
 The Kiali dashboard provides service mesh deployment information, such as:
 
@@ -87,7 +87,7 @@ The Kiali dashboard provides service mesh deployment information, such as:
 
 The Grafana dashboard also implemented to monitor the health of Istio and of applications within the service mesh.
 
-## 5. API Streaming - StreamData.io
+## 6. API Streaming - StreamData.io
 This is Server-Side-Event API (a.k.a event-driven API) - 
 using the sample API provided by Streamdata.io provider. 
 
