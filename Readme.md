@@ -62,6 +62,9 @@ For this demo, one ArgoCD app has been registered to meet CD requirement:
 
 ![ArgoCD1](./images/gitops-argocd-details.jpg)
 
+Github source for this demo is at 
+https://github.com/simhead/cicd-demo-gitops-argocd
+
 ## 3. Service Mesh - Istio
 For this demo, Istio has been used to support the distributed microservices architecture.
 
