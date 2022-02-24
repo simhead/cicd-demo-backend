@@ -2,7 +2,7 @@
 ## CICD Architecture
 
 ![CICDfull](./images/cicd-fullflow.jpg?raw=true "Title")
-
+    
 ```sh
 1. Develop an API with Github repository integration
 2. Test and validate locally
