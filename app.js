@@ -47,6 +47,11 @@ apiKeys.set('anotherapikey', {
   name: 'app3',
   secret: 'secret3'
 });
+apiKeys.set('cicd-demo', {
+  id: 4,
+  name: 'app4',
+  secret: 'secret4'
+});
 
 const userApikeyRouter = require('./routes/cicd-user-apikey-router');
 //app.use(apiKeyAuth({ getSecret }));
